@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    /* Add your CSS here */
-  </style>
-</head>
-<body>
-  <div>This is a div</div>
-  <div class="box">This div has a class "box"</div>
-  <span>This is a span</span>
-  <button>Click me</button>
-  <input type="text" required>
-  <input type="checkbox" checked>
-  <input type="radio" disabled>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-  </ul>
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <div>
-    <span>
-      <b>nested text</b>
-    </span>
-  </div>
-</body>
+  <head>
+    <style>
+      /* Add your CSS here */
+      div span b {
+        color: purple;
+      }
+      ul > li {
+        font-weight: bold;
+      }
+      ul ~ a {
+        color: green;
+      }
+      input[type=":checkbox"]:checked {
+        background-color: yellow;
+      }
+      input:focus {
+        border: 2px solid red !important;
+      }
+      input:disabled {
+        background-color: grey;
+        color: white;
+      }
+      li:first-child {
+        background-color: blue;
+      }
+      a:last-of-type {
+        text-decoration: underline;
+      }
+      li:not(:first-child) {
+        color: orange;
+      }
+      input[type="text"][required] {
+        box-shadow: 1px 1px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is a div</div>
+    <div class="box">This div has a class "box"</div>
+    <span>This is a span</span>
+    <button>Click me</button>
+    <input type="text" required />
+    <input type="checkbox" checked />
+    <input type="radio" disabled />
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <div>
+      <span>
+        <b>nested text</b>
+      </span>
+    </div>
+  </body>
 </html>
